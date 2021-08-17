@@ -23,8 +23,8 @@ commonname=REV
 email=
 
 # simple password minimal
-wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/password"
-chmod +x /etc/pam.d/common-password
+wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/darkrenz/myscript1/main/password"
+chmod +x /etc/pam.d/common-passwo
 
 # go to root
 cd
