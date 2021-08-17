@@ -282,7 +282,6 @@ wget -O autokill "https://raw.githubusercontent.com/darkrenz/myscript1/main/auto
 wget -O ceklim "https://raw.githubusercontent.com/darkrenz/myscript1/main/ceklim.sh"
 wget -O tendang "https://raw.githubusercontent.com/darkrenz/myscript1/main/tendang.sh"
 wget -O clear-log "https://raw.githubusercontent.com/darkrenz/myscript1/main/clear-log.sh"
-wget -O bannerssh "https:''raw.githubusercontent.con/darkrenz/myscrit1/main/bannerssh.conf"
 
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 
