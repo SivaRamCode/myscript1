@@ -73,6 +73,7 @@ echo -e "* reboot       : Reboot VPS"
 echo -e "* speedtest    : Tes kecepatan VPS"
 echo -e "* info         : Informasi"
 echo -e "* about        : Informasi script autossh"
+echo -e "* bannerssh    : Log design
 echo -e ""
 echo -e "==============================================================="
 echo -e ""
