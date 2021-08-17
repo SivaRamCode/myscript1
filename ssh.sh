@@ -235,7 +235,10 @@ echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 cd
 apt install -y libxml-parser-perl
 
-# banner /etc/issue.net
+# Custom Banner SSH
+
+
+echo "================  Banner ======================"
 wget -O /etc/issue.net "https://raw.githubusercontent.com/darkrenz/myscript1/main/bannerssh.conf"
 echo "Banner /etc/issue.net" >>/etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
