@@ -98,7 +98,7 @@ rm /etc/nginx/sites-available/default
 wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/darkrenz/myscript1/main/nginx.conf"
 mkdir -p /home/vps/public_html
 echo "<pre>Mod By TuanYz</pre>" > /home/vps/public_html/index.html
-wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/vps.conf"
+wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/darkrenz/myscript1/main/vps.conf"
 /etc/init.d/nginx restart
 
 # install badvpn
@@ -139,7 +139,7 @@ echo "/usr/sbin/nologin" >> /etc/shells
 # install squid
 cd
 apt -y install squid3
-wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/squid3.conf"
+wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/darkrenz/myscript1/main/squid3.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 
 # setting dan install vnstat debian 9 64bit
@@ -194,12 +194,12 @@ cd
 cd
 apt-get -y install sslh
 #configurasi sslh
-wget -O /etc/default/sslh "https://raw.githubusercontent.com/Alamyazid/Autoscript/sslh-conf"
+wget -O /etc/default/sslh "https://raw.githubusercontent.com/darkrenz/myscript1/sslh-conf"
 service sslh restart
 
 
 #OpenVPN
-wget https://raw.githubusercontent.com/Alamyazid/Autoscript/main/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
+wget https://raw.githubusercontent.com/darkrenz/myscript1/main/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
 
 # install fail2ban
 apt -y install fail2ban
@@ -236,13 +236,13 @@ cd
 apt install -y libxml-parser-perl
 
 # banner /etc/issue.net
-wget -O /etc/issue.net "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/bannerssh.conf"
+wget -O /etc/issue.net "https://raw.githubusercontent.com/darkrenz/myscript1/main/bannerssh.conf"
 echo "Banner /etc/issue.net" >>/etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 
 #install bbr dan optimasi kernel
-wget https://raw.githubusercontent.com/Alamyazid/Autoscript/main/bbr.sh && chmod +x bbr.sh && ./bbr.sh
-wget https://raw.githubusercontent.com/Alamyazid/Autoscript/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/darkrenz/myscript1/main/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+wget https://raw.githubusercontent.com/darkrenz/myscript1/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 
 # blockir torrent
 iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
@@ -263,25 +263,25 @@ netfilter-persistent reload
 
 # download script
 cd /usr/bin
-wget -O addhost "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/addhost.sh"
-wget -O about "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/about.sh"
-wget -O menu "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/menu1.sh"
-wget -O usernew "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/trial.sh"
-wget -O hapus "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/hapus.sh"
-wget -O member "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/member.sh"
-wget -o webmin "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/webmin.sh"
-wget -O delete "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/delete.sh"
-wget -O cek "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/cek.sh"
-wget -O restart "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/restart.sh"
-wget -O speedtest "https://github.com/Alamyazid/Autoscript/raw/main/speedtest_cli.py"
-wget -O info "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/info.sh"
-wget -O ram "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/ram.sh"
-wget -O renew "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/renew.sh"
-wget -O autokill "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/autokill.sh"
-wget -O ceklim "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/ceklim.sh"
-wget -O tendang "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/tendang.sh"
-wget -O clear-log "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/clear-log.sh"
+wget -O addhost "https://raw.githubusercontent.com/darkrenz/myscript1/main/addhost.sh"
+wget -O about "https://raw.githubusercontent.com/darkrenz/myscript1/main/about.sh"
+wget -O menu "https://raw.githubusercontent.com/darkrenz/myscript1/main/menu1.sh"
+wget -O usernew "https://raw.githubusercontent.com/darkrenz/myscript1/main/usernew.sh"
+wget -O trial "https://raw.githubusercontent.com/darkrenz/myscript1/main/trial.sh"
+wget -O hapus "https://raw.githubusercontent.com/darkrenz/myscript1/main/hapus.sh"
+wget -O member "https://raw.githubusercontent.com/darkrenz/myscript1/main/member.sh"
+wget -o webmin "https://raw.githubusercontent.com/darkrenz/myscript1/main/webmin.sh"
+wget -O delete "https://raw.githubusercontent.com/darkrenz/myscript1/main/delete.sh"
+wget -O cek "https://raw.githubusercontent.com/darkrenz/myscript1/main/cek.sh"
+wget -O restart "https://raw.githubusercontent.com/darkrenz/myscript1/main/restart.sh"
+wget -O speedtest "https://github.com/darkrenz/myscript1/raw/main/speedtest_cli.py"
+wget -O info "https://raw.githubusercontent.com/darkrenz/myscript1/main/info.sh"
+wget -O ram "https://raw.githubusercontent.com/darkrenz/myscript1/main/ram.sh"
+wget -O renew "https://raw.githubusercontent.com/darkrenz/myscript1/main/renew.sh"
+wget -O autokill "https://raw.githubusercontent.com/darkrenz/myscript1/main/autokill.sh"
+wget -O ceklim "https://raw.githubusercontent.com/darkrenz/myscript1/main/ceklim.sh"
+wget -O tendang "https://raw.githubusercontent.com/darkrenz/myscript1/main/tendang.sh"
+wget -O clear-log "https://raw.githubusercontent.com/darkrenz/myscript1/main/clear-log.sh"
 
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 
