@@ -3,7 +3,7 @@
 # 
 # ==================================================
 
-GitUser=""
+GitUser="darkrenz"
 #wget https://github.com/${GitUser}/
 # initializing var
 export DEBIAN_FRONTEND=noninteractive
