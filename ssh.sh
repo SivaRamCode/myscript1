@@ -282,6 +282,7 @@ wget -O autokill "https://raw.githubusercontent.com/darkrenz/myscript1/main/auto
 wget -O ceklim "https://raw.githubusercontent.com/darkrenz/myscript1/main/ceklim.sh"
 wget -O tendang "https://raw.githubusercontent.com/darkrenz/myscript1/main/tendang.sh"
 wget -O clear-log "https://raw.githubusercontent.com/darkrenz/myscript1/main/clear-log.sh"
+wget -O banner "https://raw.githubusercontent.com/darkrenz/myscript1/main/banner.sh
 
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 
@@ -304,6 +305,7 @@ chmod +x ceklim
 chmod +x ram
 chmod +x renew
 chmod +x clear-log
+chmod +x banner
 
 # remove unnecessary files
 apt -y autoclean
