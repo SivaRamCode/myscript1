@@ -1,2 +1,2 @@
 #!/bin/bash
-nano banner /etc/issue.net
+nano /etc/issue.net
