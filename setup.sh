@@ -21,6 +21,7 @@ mkdir /var/lib/premium-script;
 echo "Enter the VPS Subdomain Hostname, if not available, please click Enter"
 read -p "Hostname / Domain: " host
 echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
+echo "$host" >> /etc/v2ray/domain
 wget https://raw.githubusercontent.com/darkrenz/myscript1/main/ssh.sh && chmod +x ssh.sh && screen -S ssh.sh ./ssh.sh
 wget https://raw.githubusercontent.com/darkrenz/myscript1/main/websocket-python/websocket.sh && chmod +x websocket.sh && screen -S websocket.sh ./websocket.sh
 wget https://raw.githubusercontent.com/darkrenz/myscript1/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
