@@ -240,6 +240,7 @@ sed -i 's/#Banner none/Banner \/etc\/issue.net/' /etc/ssh/sshd_config
 wget -O /etc/issue.net "https://raw.githubusercontent.com/darkrenz/myscript1/main/bannerssh.conf
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 service sshd restart
+systemctl restart dropbear
 
 #install bbr dan optimasi kernel
 wget https://raw.githubusercontent.com/darkrenz/myscript1/main/bbr.sh && chmod +x bbr.sh && ./bbr.sh
