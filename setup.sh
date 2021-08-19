@@ -32,7 +32,7 @@ wget https://raw.githubusercontent.com/darkrenz/myscript1/main/websocket-python/
 #wget https://raw.githubusercontent.com/darkrenz/myscript1/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 rm -f /root/ssh.sh
 #rm -f /root/sstp.sh
-rm -f /root/wg.sh
+#rm -f /root/wg.sh
 #rm -f /root/sodosok.sh
 #rm -f /root/ssr.sh
 #rm -f /root/ins-vt.sh
