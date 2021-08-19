@@ -22,13 +22,13 @@ wget https://raw.githubusercontent.com/darkrenz/myscript1/main/websocket-python/
 rm -f /root/ssh-vpn.sh
 rm -f /root/hanyassh.sh
 rm -f /root/websocket.sh
-rm -f /root/sstp.sh
-rm -f /root/wg.sh
-rm -f /root/ssr.sh
-rm -f /root/shadowsocksobfs.sh
-rm -f /root/ins-vt.sh
-rm -f /root/go.sh
-rm -f /root/ipsec.sh
+#rm -f /root/sstp.sh
+#rm -f /root/wg.sh
+#rm -f /root/ssr.sh
+#rm -f /root/shadowsocksobfs.sh
+#rm -f /root/ins-vt.sh
+#rm -f /root/go.sh
+#rm -f /root/ipsec.sh
 history -c
 echo "1.1" > /home/ver
 clear
