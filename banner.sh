@@ -1,7 +1,3 @@
 #!/bin/bash
-myfunction () {
-# Test
+clear
 nano /etc/issue.net
-}
-
-myfunction
