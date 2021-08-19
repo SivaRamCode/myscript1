@@ -1,6 +1,7 @@
 #!/bin/bash
-
-# Custom - Banner
-apt update
-apt-get install nano
+myfunction () {
+# Test
 nano /etc/issue.net
+}
+
+myfunction
