@@ -25,19 +25,19 @@ echo "$host" >> /etc/v2ray/domain
 wget https://raw.githubusercontent.com/darkrenz/myscript1/main/ssh.sh && chmod +x ssh.sh && screen -S ssh.sh ./ssh.sh
 wget https://raw.githubusercontent.com/darkrenz/myscript1/main/websocket-python/websocket.sh && chmod +x websocket.sh && screen -S websocket.sh ./websocket.sh
 #wget https://raw.githubusercontent.com/darkrenz/myscript1/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
-wget https://raw.githubusercontent.com/darkrenz/myscript1/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
+#wget https://raw.githubusercontent.com/darkrenz/myscript1/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 #wget https://raw.githubusercontent.com/darkrenz/myscript1/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
 #wget https://raw.githubusercontent.com/darkrenz/myscript1/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
 #wget https://raw.githubusercontent.com/darkrenz/myscript1/main/ins-vt.sh && chmod +x ins-vt.sh && sed -i -e 's/\r$//' ins-vt.sh && screen -S v2ray ./ins-vt.sh
-wget https://raw.githubusercontent.com/darkrenz/myscript1/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
+#wget https://raw.githubusercontent.com/darkrenz/myscript1/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 rm -f /root/ssh.sh
 #rm -f /root/sstp.sh
 rm -f /root/wg.sh
 #rm -f /root/sodosok.sh
 #rm -f /root/ssr.sh
 #rm -f /root/ins-vt.sh
-rm -f /root/go.sh
-rm -f /root/ipsec.sh
+#rm -f /root/go.sh
+#rm -f /root/ipsec.sh
 history -c
 echo "1.1" > /home/ver
 clear
